@@ -10,7 +10,6 @@ import time
 from telebot import TeleBot
 from config import BOT_TOKEN, WEBHOOK_HOST, WEBHOOK_PORT, RUN_MODE
 from database import init_database
-from utils.logger import get_logger
 from services.notification_service import notification_service
 from web.webhook import app as flask_app
 
