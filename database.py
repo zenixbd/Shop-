@@ -11,9 +11,6 @@ from pathlib import Path
 from contextlib import contextmanager
 from typing import Generator, Optional, Dict, Any, List
 from config import DATABASE_PATH, ADMIN_ID
-from utils.logger import get_logger
-
-logger = get_logger("Database")
 
 db_file_path = Path(DATABASE_PATH)
 db_file_path.parent.mkdir(parents=True, exist_ok=True)
